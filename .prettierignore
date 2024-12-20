@@ -1,0 +1,6 @@
+# Ignore artifacts:
+build
+coverage
+.nuxt
+.idea
+.output
