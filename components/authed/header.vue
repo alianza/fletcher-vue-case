@@ -13,7 +13,7 @@ const links = ["fletcher", "marriages", "wellness", "business", "events", "fanSh
 <template>
   <header>
     <div class="bg-gray-200">
-      <div class="container mx-auto flex px-4">
+      <div class="container mx-auto flex overflow-x-auto px-4">
         <a
           href="#"
           v-for="link in links"

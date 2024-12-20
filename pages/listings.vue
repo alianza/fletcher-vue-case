@@ -80,7 +80,7 @@ const filters = computed(() => getFilters(t));
       <h1 class="text-primary text-lg font-bold">{{ $t("listings.title") }}</h1>
     </div>
 
-    <div class="border-tertiary container mx-auto flex justify-between gap-2 border-b-[1px] px-4 py-8">
+    <div class="border-tertiary container mx-auto flex flex-wrap justify-between gap-2 border-b-[1px] px-4 py-8">
       <div class="flex items-center justify-center gap-2">
         <NuxtLink to="/" class="transition-transform hover:scale-125 active:scale-95">
           <HomeIcon class="text-primary size-4" />
