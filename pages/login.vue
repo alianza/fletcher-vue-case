@@ -75,7 +75,6 @@ const handleLogin = () => {
           <PasswordInput
             v-model="password"
             :label="$t('general.password')"
-            :iconAfter="ArrowRightIcon"
             minlength="8"
             :disabled="isUserLoggedIn"
             required

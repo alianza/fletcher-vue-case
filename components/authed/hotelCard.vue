@@ -49,7 +49,8 @@ const icon = computed(() => (favorited.value ? HeartIconFilled : HeartIcon));
           alt="Hotel Image"
           class="h-full w-full rounded-md object-cover transition-[transform,box-shadow] group-hover:scale-[102%] group-hover:shadow-xl"
         />
-        <icon
+        <component
+          :is="icon"
           @click="favorited = !favorited"
           class="text-secondary absolute right-4 top-4 size-8 cursor-pointer rounded-full bg-white p-2 transition-[transform,box-shadow] hover:scale-125 hover:shadow-xl"
         />

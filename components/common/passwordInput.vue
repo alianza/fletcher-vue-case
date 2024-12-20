@@ -20,22 +20,14 @@ const inputType = computed(() => (showPassword.value ? "text" : "password"));
 <template>
   <div class="relative mt-2">
     <div class="relative">
-      <icon
+      <component
+        :is="icon"
         class="text-primary absolute right-2 top-1/3 size-4 cursor-pointer"
         @click="showPassword = !showPassword"
       />
-      <input
-        :type="inputType"
-        :id="label || id"
-        class="w-full"
-        v-model="model"
-        v-bind="$attrs"
-      />
+      <input :type="inputType" :id="label || id" class="w-full" v-model="model" v-bind="$attrs" />
     </div>
-    <label
-      :for="label || id"
-      class="text-primary blo ck absolute -top-3 left-2 px-1 text-sm"
-    >
+    <label :for="label || id" class="text-primary blo ck absolute -top-3 left-2 px-1 text-sm">
       <div class="absolute bottom-[6px] left-0 block h-[2px] w-full bg-white" />
       <span class="relative">{{ label }}</span>
     </label>
