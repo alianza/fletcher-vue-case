@@ -16,7 +16,7 @@ export default defineEventHandler(async (event) => {
   const queryParams = new URLSearchParams(filters);
   const queryParamsString = decodeURIComponent(queryParams.toString());
 
-  const finalUrl = url ? `${url}&${queryParamsString}` : `${API_URL}/hotels?${queryParamsString}`;
+  const finalUrl = url ? `${url}&${queryParamsString}` : `${API_URL}/hotels?${queryParamsString}`; // if url is provided (for pagination), append query params to url else use default url with query params
 
   const res = await fetch(finalUrl, {
     method: "GET",

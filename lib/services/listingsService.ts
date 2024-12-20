@@ -1,7 +1,7 @@
 import type { ComposerTranslation } from "vue-i18n";
 
 export async function getListings(
-  filters?: { sort?: string; theme?: string; facilities?: string; province?: string },
+  filters?: { sort?: string; theme?: string[]; facilities?: string[]; province?: string[] },
   url?: string,
 ) {
   try {
